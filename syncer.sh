@@ -19,9 +19,11 @@ git pull
 # переключимся на master ветку, куда добавляем изменения
 git checkout master
 
+mkdir -p $REPO_DIR/$HOSTNAME
+
 # добавим новые файлы в репозиторий
-rsync -av $DIRS $REPO_DIR
-find /root/configurations/* -exec git add {} \; git pull
+rsync -av $DIRS $REPO_DIR/$HOSTNAME/
+find $REPO_DIR/* -exec git add {} \;
 
 # сохраним изменения
 git commit -a -m "Configuration updated at $(date)"
