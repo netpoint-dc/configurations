@@ -30,3 +30,4 @@ sshd:x:110:65534::/var/run/sshd:/usr/sbin/nologin
 administrator:x:1000:1000:administrator,,,:/home/administrator:/bin/bash
 ntp:x:111:117::/home/ntp:/bin/false
 test:x:1001:1001::/home/test:
+test2:x:1002:1002::/home/test2:
