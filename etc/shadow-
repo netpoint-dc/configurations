@@ -1,4 +1,4 @@
-root:!:16927:0:99999:7:::
+root:$6$0y/YRTog$JdJLvX28sL9IwLBJKnVtHbJTeKT8CLhzLYp4uebtRoqio/12xWF5wSWI5xGwm9P7liZaLEbl4TXljvM8Ns8SN/:17706:0:99999:7:::
 daemon:*:16911:0:99999:7:::
 bin:*:16911:0:99999:7:::
 sys:*:16911:0:99999:7:::
@@ -27,5 +27,5 @@ messagebus:*:16927:0:99999:7:::
 uuidd:*:16927:0:99999:7:::
 dnsmasq:*:16927:0:99999:7:::
 sshd:*:16927:0:99999:7:::
-administrator::16927:0:99999:7:::
+administrator:*:16927:0:99999:7:::
 ntp:*:16927:0:99999:7:::

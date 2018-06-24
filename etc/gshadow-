@@ -54,3 +54,4 @@ ssh:!::
 administrator:!::
 lpadmin:!::administrator
 sambashare:!::administrator
+ntp:!::

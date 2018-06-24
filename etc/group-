@@ -54,3 +54,4 @@ ssh:x:114:
 administrator:x:1000:
 lpadmin:x:115:administrator
 sambashare:x:116:administrator
+ntp:x:117:

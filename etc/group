@@ -55,3 +55,4 @@ administrator:x:1000:
 lpadmin:x:115:administrator
 sambashare:x:116:administrator
 ntp:x:117:
+test:x:1001:
