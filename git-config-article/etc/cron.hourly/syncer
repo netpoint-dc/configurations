@@ -1,0 +1,4 @@
+#!/bin/bash
+
+bash /root/configurations/syncer.sh /root/configurations /etc /usr/local/etc
+
