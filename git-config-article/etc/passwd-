@@ -31,3 +31,4 @@ administrator:x:1000:1000:administrator,,,:/home/administrator:/bin/bash
 ntp:x:111:117::/home/ntp:/bin/false
 test:x:1001:1001::/home/test:
 test2:x:1002:1002::/home/test2:
+test3:x:1003:1003::/home/test3:
