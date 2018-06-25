@@ -1,5 +1,15 @@
 #!/bin/bash
 
+if [ "$#" -lt 2 ]
+then
+	echo "At least 2 or more parameters should be passed"
+        echo "Usage: syncer.sh /path/to/repo /path/to/configs [/path/to/other/configs ...]"
+        echo "--"
+        echo "Avoid final slashes when specifying config directories if the intention is to"
+        echo "have dir rather than dir contents"
+        exit
+fi
+
 REPO_DIR=$1 # где хранится репозиторий
 shift
 DIRS=$@ # какие каталоги синхронизуем
@@ -13,6 +23,8 @@ HOUR=$(date +"%H")
 
 echo "Hostname is "$HOSTNAME
 echo "Today is "$TODAY
+
+cd $REPO_DIR
 
 # выкачаем обновления с сервера
 git pull
@@ -32,7 +44,7 @@ git commit -a -m "Configuration updated at $(date)"
 git push
 
 # если последняя синхронизация в сутках, создадим ветку для сегодняшнего дня
-if [ $HOUR = "00" ];
+if [ $HOUR = "23" ];
 then
     git checkout -b $TODAY
     git push origin $TODAY
